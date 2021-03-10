@@ -1,8 +1,5 @@
 steps: 
   - bash: |
-      git clone -b ${UPSTREAM_BRANCH} $(upstream.repo) $(System.DefaultWorkingDirectory)/osm
-    displayName: Checkout $(upstream.repo) @ ${UPSTREAM_BRANCH}
-  - bash: |
       sleep 180
     displayName: "Add delay before running upstream e2es"
   - bash: |
